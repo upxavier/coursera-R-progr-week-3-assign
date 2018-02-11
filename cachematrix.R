@@ -1,3 +1,11 @@
+## Coursera - R programming - week 3 - programming assignment.
+## Author: Xavier.
+## Date: 11/02/18
+
+## makeCacheMatrix function.
+## creates and returns a list of functions: get, set, getInverse, SetInverse.
+## The purpose is to inverse a matrix in the cache memory.
+
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -14,7 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve function.
+## If the inverted matrix does not exist, the procedure invert x and sent it back.
+## Otherwise the stored inverted matrix is sent back.
+## The stored inverted matrix is stored in cache.
 
 cacheSolve <- function(x, ...) {
   
